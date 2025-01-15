@@ -21,7 +21,7 @@ const Chatbot = () => {
 
     try {
       // Send the user message to the backend (your API)
-      const response = await axios.post('http://localhost:3000/chat', { message: userInput });
+      const response = await axios.post('https://openai-bot-api.onrender.com/chat', { message: userInput });
 
       // Extract the response text from the API response
       const { response: botReply } = response.data;
